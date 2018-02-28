@@ -12,6 +12,8 @@ defmodule Ephemera.Application do
       supervisor(EphemeraWeb.Endpoint, []),
       # Start your own worker by calling: Ephemera.Worker.start_link(arg1, arg2, arg3)
       # worker(Ephemera.Worker, [arg1, arg2, arg3]),
+      worker(Ephemera.Spotify.GrantWorker, []),
+      worker(Ephemera.Spotify.TracksWorker, [])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
