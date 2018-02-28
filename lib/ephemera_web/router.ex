@@ -5,7 +5,13 @@ defmodule EphemeraWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", EphemeraWeb do
+  scope "/" do
     pipe_through :api
+
+		forward "/graphiql", Absinthe.Plug.GraphiQL,
+      schema: EphemeraWeb.Schema
+
+    forward "/", Absinthe.Plug,
+      schema: EphemeraWeb.Schema
   end
 end
