@@ -1,5 +1,6 @@
 defmodule EphemeraWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :ephemera
+  use Absinthe.Phoenix.Endpoint
 
   socket "/socket", EphemeraWeb.UserSocket
 

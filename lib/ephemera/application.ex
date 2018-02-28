@@ -6,6 +6,7 @@ defmodule Ephemera.Application do
 
     children = [
       supervisor(EphemeraWeb.Endpoint, []),
+      supervisor(Absinthe.Subscription, [EphemeraWeb.Endpoint]),
       worker(Ephemera.Spotify.GrantWorker, []),
       worker(Ephemera.Spotify.TracksWorker, [])
     ]

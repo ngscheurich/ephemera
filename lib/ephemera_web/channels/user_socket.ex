@@ -1,5 +1,7 @@
 defmodule EphemeraWeb.UserSocket do
   use Phoenix.Socket
+  use Absinthe.Phoenix.Socket,
+    schema: EphemeraWeb.Schema
 
   ## Channels
   # channel "room:*", EphemeraWeb.RoomChannel
