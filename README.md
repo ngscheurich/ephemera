@@ -84,3 +84,7 @@ The Spotify adapter, for instance, has the following modules:
 
 In addition, the Spotify adapter also includes an `InMemoryClient` that mocks the Spotify web API
 for testing, and defines `Grant` and `Track` structs.
+
+## License
+
+Ephemera is released under the [MIT license](https://github.com/ngscheurich/ephemera/blob/master/LICENSE).
