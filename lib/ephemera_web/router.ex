@@ -8,7 +8,7 @@ defmodule EphemeraWeb.Router do
   scope "/" do
     pipe_through :api
 
-		forward "/graphiql", Absinthe.Plug.GraphiQL,
+    forward "/graphiql", Absinthe.Plug.GraphiQL,
       schema: EphemeraWeb.Schema
 
     forward "/", Absinthe.Plug,
