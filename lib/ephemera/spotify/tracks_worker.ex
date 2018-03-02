@@ -10,7 +10,7 @@ defmodule Ephemera.Spotify.TracksWorker do
 
   @name SpotifyTracksWorker  
   @client Application.get_env(:ephemera, Ephemera.Spotify)[:client]
-  @refresh_time 300_000
+  @refresh_time 60_000
 
   ## Client API
 
