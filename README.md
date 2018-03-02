@@ -1,7 +1,5 @@
 # 🍃 Ephemera
 
----
-
 After launching my [personal website](https://nick.scheurich.me/), I started to feel the desire,
 as one does, to display my recent web activity in different places on the site. You know the stuff
 I’m talking about: Spotify tracks, Tweets, Instagram posts. As my website is simply the output of a
