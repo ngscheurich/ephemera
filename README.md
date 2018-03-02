@@ -21,6 +21,29 @@ config :ephemera, Ephemera.Spotify,
   refresh_token: Map.fetch!(System.get_env(), "SPOTIFY_REFRESH_TOKEN")
 ```
 
+## Retrieving data
+
+An endpoint at the root path of the application exposes data as per the [GraphQL spec](http://facebook.github.io/graphql/October2016/).
+A simple JavaScript example to get some data about recent Spotify tracks could look something like:
+
+```JavaScript
+const query = `
+  {
+    spotifyTracks {
+      name
+      artist
+    }
+  }
+`;
+
+const xhr = new XMLHttpRequest();
+xhr.responseType = "json";
+xhr.open("POST", "https://your-ephemera-app.com/");
+xhr.setRequestHeader("Content-Type", "application/json");
+xhr.setRequestHeader("Accept", "application/json");
+xhr.onload= () => console.log(xhr.response.data.spotifyTracks);
+xhr.send(JSON.stringify({ query }));
+```
 
 ## Roadmap
 
