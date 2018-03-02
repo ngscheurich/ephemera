@@ -40,7 +40,8 @@ defmodule Ephemera.Mixfile do
       {:absinthe_plug, "~> 1.4"},
       {:absinthe_phoenix, "~> 1.4"},
       {:httpoison, "~> 1.0"},
-      {:poison, "~> 3.1"}
+      {:poison, "~> 3.1"},
+      {:corsica, "~> 1.0"}
     ]
   end
 end

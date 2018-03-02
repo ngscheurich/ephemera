@@ -28,6 +28,10 @@ defmodule EphemeraWeb.Endpoint do
     key: "_ephemera_key",
     signing_salt: "V0RpjRpc"
 
+  plug Corsica,
+    origins: [~r{^http://localhost}],
+    allow_headers: ["content-type"]
+
   plug EphemeraWeb.Router
 
   @doc """
