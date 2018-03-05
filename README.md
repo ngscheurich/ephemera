@@ -6,8 +6,6 @@ I’m talking about: Spotify tracks, Tweets, Instagram posts. As my website is s
 [static site generator](http://gohugo.io/), I would clearly need some external resource to handle
 this for me. Enter: Ephemera.
 
----
-
 ## Table of contents
 
 * [Ephemera](#-ephemera)
