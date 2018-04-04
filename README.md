@@ -9,16 +9,16 @@ this for me. Enter: Ephemera.
 ## Table of contents
 
 * [Ephemera](#-ephemera)
-* [Table of Contents](#table-of-contents)
-* [Configuration](#configuration)
-   * [Spotify](#spotify)
-* [Retrieving data](#retrieving-data)
-* [Roadmap](#roadmap)
-* [Development](#development)
-   * [Service adapters](#service-adapters)
+  * [Table of Contents](#table-of-contents)
+  * [Configuration](#configuration)
+     * [Spotify](#spotify)
+  * [Retrieving data](#retrieving-data)
+  * [Roadmap](#roadmap)
+  * [Development](#development)
+    * [Service adapters](#service-adapters)
       * [Specification](#specification)
       * [Example](#example)
-* [License](#license)
+  * [License](#license)
 
 ## Configuration
 
